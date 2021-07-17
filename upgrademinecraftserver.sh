@@ -14,7 +14,7 @@
 #
 # Script Assumptions
 # * Bedrock Server runs within a screen session
-# * This script is allowed to kill all running screen sessions. This behavior can be altered if Bedrock Server is running in a named session by uncommenting and editing line 67 and removing line 66.
+# * This script is allowed to kill all running screen sessions. This behavior can be altered if Bedrock Server is running in a named session by uncommenting and editing line 68 and removing line 67.
 # * You have created a run.sh file that starts your Bedrock Server and run.sh is located in the Bedrock Server directory
 #
 #
