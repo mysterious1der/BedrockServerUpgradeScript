@@ -34,7 +34,7 @@ serverlocation=
 backuplocation=
 # Example   backuplocation=/home/minecraft/server_backups
 
-# Set line 37 to yes and set your Pushover details in order to receive Pushover notifications when this script runs
+# Set line 38 to yes and set your Pushover details in order to receive Pushover notifications when this script runs
 sendpushover=no
 pushovertoken=
 pushoveruser=
