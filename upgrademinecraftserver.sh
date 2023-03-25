@@ -100,7 +100,6 @@ else
         cp -f $serverlocation/banned-ips.json $backuplocation
         cp -f $serverlocation/banned-players.json $backuplocation
         cp -f $serverlocation/ops.json $backuplocation
-	cp -f $serverlocation/whitelist.json $backuplocation
         cp -f $serverlocation/server.properties $backuplocation
         cp -rf $serverlocation/world $backuplocation
         cp -rf $serverlocation/worlds $backuplocation
@@ -133,7 +132,6 @@ else
         cp -f $backuplocation/banned-ips.json $serverlocation
         cp -f $backuplocation/banned-players.json $serverlocation
         cp -f $backuplocation/ops.json $serverlocation
-	cp -f $backuplocation/whitelist.json $serverlocation
         cp -f $backuplocation/server.properties $serverlocation
         cp -rf $backuplocation/world $serverlocation/
         cp -rf $backuplocation/worlds $serverlocation/
