@@ -107,6 +107,7 @@ else
         cp -f $serverlocation/run.sh $backuplocation
         rm -rf $backuplocation/minecraftserver-old/
         cp -r $serverlocation $backuplocation/minecraftserver-old
+	cp -f $serverlocation/allowlist.json $backuplocation
         rm -rf $serverlocation/*
 
 
@@ -137,6 +138,7 @@ else
         cp -rf $backuplocation/world $serverlocation/
         cp -rf $backuplocation/worlds $serverlocation/
         cp -f $backuplocation/run.sh $serverlocation
+	cp -f $backuplocation/allowlist.json $serverlocation
 
 
         echo " _____ _                  _               _   _       "
