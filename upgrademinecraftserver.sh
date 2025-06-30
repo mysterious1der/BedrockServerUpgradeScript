@@ -42,7 +42,7 @@ pushoveruser=
 ################################################################################################################
 # No need to edit below this line unless instructed to
 
-payloadurl=$(curl -s -H "authority: minecraft.azureedge.net" -H "upgrade-insecure-requests: 1" -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" -H "sec-fetch-site: cross-site" -H "sec-fetch-mode: navigate" -H "sec-fetch-user: ?1" -H "sec-fetch-dest: document" -H "referer: https://www.minecraft.net/" -H "accept-language: en-US,en;q=0.9" --compressed https://www.minecraft.net/en-us/download/server/bedrock | grep -o -m 1 -E 'https.+linux.+zip')
+payloadurl=$(curl -sL https://net-secondary.web.minecraft-services.net/api/v1.0/download/links | grep -oP 'https://[^"]*linux[^"]*\.zip' | head -n 1)
 newfilename=$(echo $payloadurl | grep -oE '[^/]+$')
 fileextension=$(echo $newfilename | grep -oE '\.[^.]*$')
 newfilenameshort=$(basename $newfilename $fileextension)
